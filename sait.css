@@ -176,7 +176,9 @@ p{
 }
 
 @media screen and (max-width: 768px){
-
+    .t1{
+      position: relative;
+    }
     .tovar{
         font-size: 40px;
     }
