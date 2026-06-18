@@ -175,8 +175,6 @@ p{
     background-color: #3e8e41;
 }
 
-
-
 @media screen and (max-width: 768px){
 
     .tovar{
@@ -205,25 +203,10 @@ p{
 }
 
 
-
 @media screen and (max-width: 480px){
 
-    .dropdown-content{
-        font-family: 'Aeroport', sans-serif;
-        font-weight: bold;
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        z-index: 9999;
-        padding: 5px 0;
-        font-size: 15px;
-    }
     header{
         padding: 5px;
-        margin-bottom: 0;
     }
 
     .left img{
@@ -241,15 +224,14 @@ p{
     }
 
     .tovar{
-        font-size: 30px;
+        font-size: 24px;
         margin: 10px 0;
-
     }
 
     section{
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 70px;
     }
 
     .t1{
