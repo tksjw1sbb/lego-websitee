@@ -1,0 +1,540 @@
+@font-face{
+    font-family: 'Aeroport';
+    src: url('../сайт/шрифты/Aeroport\ Bold.otf')
+    format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #FFCE38;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;          /* прижимаем к верху */
+    left: 0;
+    width: 100%;     /* на всю ширину */
+    z-index: 1000;   /* поверх контента */
+    box-sizing: border-box;
+}
+section{
+    margin-bottom: 150px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.left {
+    float: left;
+}
+input{
+    padding-left: 20px;
+    font-size: 40px;
+}
+.right{
+    float: right;
+}
+
+button{
+    border: none;
+}
+h2{
+    font-family: 'Aeroport', sans-serif;
+    font-weight: bold;
+    padding-left: 80px;
+}
+h4{
+    font-family: 'Aeroport', sans-serif;
+    font-weight: bold;
+    padding-left: 150px;
+}
+.tovar{
+    font-family: 'Aeroport', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    padding: 1px;
+    margin: 15px;
+}
+
+footer{
+    background-color: rgba(255, 206, 56, 0.6);
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: left;
+    gap: 20px;
+    padding: 5px;
+}
+footer img{
+    width: 100px;
+    height: auto;
+}
+
+p{
+    padding-left: 10px;
+    font-family: 'Aeroport', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.dropbtn {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+.dropdown-content { 
+    font-family: 'Aeroport', sans-serif;
+    font-weight: bold;
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 15px rgba(0,0,0,0.2); 
+    z-index: 9999;
+    padding: 10px 0;
+    font-size: 30px;
+}
+.dropdown-content a { 
+    color: black; 
+    padding: 12px 16px; 
+    text-decoration: none; 
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #fcd45f;
+}
+.dropdown:hover .dropdown-content { 
+    display: block;
+}
+.dropdown:hover .dropbtn { 
+    display: block;
+    background-color: #3e8e41;
+}
+
+.korz1{
+    width: 2000px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+}
+
+.empty-cart {
+    text-align: center;
+    font-family: 'Aeroport', sans-serif;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFCE38;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart-item-img {
+    width: 150px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+    margin-left: 30px;
+}
+
+.cart-item-title {
+    font-family: 'Aeroport', sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.cart-item-price {
+    font-family: 'Aeroport', sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+
+.qty-btn {
+    background-color: #FFCE38;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Aeroport', sans-serif;
+    font-size: 20px;
+    border: none;
+}
+
+.qty-display {
+    font-family: 'Aeroport', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.remove-btn {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-family: 'Aeroport', sans-serif;
+    border: none;
+    font-weight: bold;
+}
+
+.cart-total {
+    width: 80%;
+    margin: 40px auto 150px auto;
+    padding-top: 50px;
+    text-align: right;
+    font-family: 'Aeroport', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.checkout-btn {
+    text-decoration: none;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Aeroport', sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    text-align: left;
+    align-items: left;
+    font-weight: bold;
+}
+
+.xzz{
+    margin-left: 250px;
+    width: 2000px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    
+    .korz1 {
+        width: 90%;
+    }
+    
+    .xzz {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .cart-item {
+        width: 90%;
+    }
+    
+    .cart-total {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .dropdown-content{
+        font-family: 'Aeroport', sans-serif;
+        font-weight: bold;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        z-index: 9999;
+        padding: 5px 0;
+        font-size: 15px;
+    }
+    
+    header{
+        padding: 5px;
+    }
+
+    .left img{
+        max-width: 120px;
+        height: auto;
+    }
+
+    .dropbtn{
+        width: 45px;
+    }
+
+    .right img{
+        width: 30px;
+        height: auto;
+    }
+    .t1{
+        width: 45%;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .t1 img{
+        width: 100%;
+        margin: 0;
+    }
+
+    .korzz{
+        position: static;
+        width: 95%;
+        height: 35px;
+        font-size: 9px;
+        border-radius: 5px;
+        margin: 5px auto;
+        transform: none;
+    }
+
+    .korzz:hover{
+        transform: scale(1.03);
+    }
+
+    footer{
+        gap: 5px;
+        padding: 3px;
+    }
+
+    footer img{
+        width: 25px;
+    }
+
+    footer p{
+        font-size: 12px;
+        padding-left: 0;
+    }
+    
+
+    h2 {
+        text-align: center;
+        padding-left: 0;
+        font-size: 40px;
+    }
+    
+    .korz1 {
+        width: 90%;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border-radius: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        padding: 30px 20px;
+    }
+    
+    .xzz {
+        width: 95%;
+        margin-left: 2.5%;
+        padding: 20px;
+    }
+    
+    .cart-item {
+        width: 100%;
+        background-color: #FFCE38;
+        border-radius: 15px;
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: none;
+    }
+    
+    .cart-item-img {
+        display: none;
+    }
+    
+
+    .cart-item-info {
+        flex-grow: 1;
+        margin-left: 0;
+    }
+    
+    .cart-item-title {
+        font-size: 24px;
+        margin: 0;
+    }
+    
+    .cart-item-price {
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    .cart-item-actions {
+        gap: 10px;
+    }
+    
+    .qty-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+    
+    .qty-display {
+        font-size: 18px;
+        min-width: 25px;
+    }
+    
+    .remove-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    
+    .cart-total {
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    
+    .checkout-btn {
+        background-color: #ff0000;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 15px;
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .empty-cart {
+        text-align: center;
+        margin-top: 50px;
+        padding-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    header{
+        padding: 5px;
+    }
+
+    .left img{
+        max-width: 120px;
+        height: auto;
+    }
+
+    .dropbtn{
+        width: 45px;
+    }
+
+    .right img{
+        width: 30px;
+        height: auto;
+    }
+
+
+    .korzz{
+        position: static;
+        width: 95%;
+        height: 35px;
+        font-size: 9px;
+        border-radius: 5px;
+        margin: 5px auto;
+        transform: none;
+    }
+
+    .korzz:hover{
+        transform: scale(1.03);
+    }
+
+    footer{
+        gap: 5px;
+        padding: 3px;
+    }
+
+    footer img{
+        width: 25px;
+    }
+
+    footer p{
+        font-size: 12px;
+        padding-left: 0;
+    }
+    
+    h2 {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    
+    .korz1 {
+        width: 95%;
+        padding: 20px 15px;
+        border-radius: 20px;
+    }
+    
+    .cart-item {
+        padding: 12px 15px;
+        border-radius: 12px;
+        margin-bottom: 12px;
+    }
+    
+    .cart-item-title {
+        font-size: 20px;
+    }
+    
+    .cart-item-price {
+        font-size: 16px;
+    }
+    
+    .qty-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+    
+    .remove-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .cart-total {
+        font-size: 24px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .checkout-btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    
+}

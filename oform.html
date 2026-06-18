@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа - LEGO</title>
+    <link rel="stylesheet" href="oform.css">
+</head>
+<body>
+    <header>       
+        <div class="left">
+            <div class="dropdown">
+                <img class="dropbtn" src="картинки/menu.PNG" width="170px">
+               <div class="dropdown-content">
+               <a href="raspr.html">Распродажа</a>
+               <a href="korz.html">Корзина</a>
+               <a href="oform.html">Оформить заказ</a>
+               </div>
+               </div>     
+            <img src="картинки/logo.png" width="300px">
+        </div>
+        <div class="right"> 
+            <a href="korz.html">
+               <img src="картинки/korz.PNG" alt="Корзина" >
+            </a>
+            <a href="index.html">
+               <img src="картинки/home.PNG" alt="Домой" >
+            </a>
+        </div>
+        </header>
+
+        <section>
+            <p class="tovar">Оформление заказа</p>
+            <div class="oform">
+            <form id="orderForm">
+                <input type="text" id="num" name="phone" class="num" placeholder="Ваш номер телефона" required/>
+                <input type="email" id="email" name="email" class="email" placeholder="Ваш Email">
+                <input type="text" id="address" name="address" class="address" placeholder="Ваш адрес доставки">
+                <div class="off">
+                    <button type="submit" class="of">ОФОРМИТЬ ЗАКАЗ</button>
+                </div>
+            </form>
+            </div>
+    </section>
+
+    <footer>
+        <a href="https://web.telegram.org/">
+            <img src="картинки/tg.png">
+            </a>
+            <a href="https://www.instagram.com/">
+            <img src="картинки/inst.png">
+            </a>
+    <p>@LEGO_OFFICIAL</p>
+    </footer>
+
+    <script src="oform.js" defer></script>
+</body>
+</html>
